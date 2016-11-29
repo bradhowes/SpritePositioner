@@ -26,6 +26,13 @@ public class Positioner: Sequence, IteratorProtocol {
     private var randomPositions: [CGPoint] = []
     private var nextIndex: Int = 0
 
+    /**
+     Initialize new instance. Calculates values used during `generate` phase.
+     - parameter bounds: the area to populate
+     - parameter minSeparation: the minimum separation between two points on either axis
+     - parameter minVariance: the minimum variation in either axis for a position
+     - parameter randomSource: the source of random values to use when varying a position
+     */
     public init(bounds: CGRect, minSeparation: CGSize, minVariance: CGSize, randomSource: RandomSource) {
 
         self.bounds = bounds
@@ -56,6 +63,7 @@ public class Positioner: Sequence, IteratorProtocol {
     /**
      Generate a new collection of points that honor the initial settings for minimim separation and min variance in
      each axis.
+     -parameter filter: function called for each position. If it returns `true` the point will be used.
      */
     public func generate(filter: FilterProc? = nil) {
         randomPositions.removeAll(keepingCapacity: true)
@@ -107,13 +115,5 @@ public class Positioner: Sequence, IteratorProtocol {
         let pos = randomPositions[nextIndex]
         nextIndex += 1
         return pos
-    }
-
-    public func debugView(scene: SKScene) {
-        randomPositions.forEach {
-            let sprite = SKSpriteNode(color: UIColor.cyan, size: CGSize(width: 3, height: 3))
-            sprite.position = $0
-            scene.addChild(sprite)
-        }
     }
 }
