@@ -1,6 +1,8 @@
 # SpritePositioner
 
-For a recreation of Robotron in Swift, I needed a way to generate random sprite positions without overlap. This is an Xcode 8 Swift playground that demonstrates the solution I came up with.
+For a recreation in Swift of the classic arcade game Robotron, I needed a way to generate random sprite
+positions without overlap. This code contains an Xcode 8 Swift playground that demonstrates the solution I came
+up with.
 
 ![](Scene.png)
 
@@ -12,7 +14,7 @@ please see the source.
 
 ## Operation
 
-If the playground does not start running, click on the '|>' button at the bottom of the Xcode window to start
+If the playground does not start running, click on the ![play](play.png) button at the bottom of the Xcode window to start
 it. After a short pause you should see a scene like that shown above to the right of the code. If *that* does
 not appear, make sure the assistant editor is visible on the right.
 
