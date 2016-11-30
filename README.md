@@ -28,7 +28,7 @@ Click on the 'Regen' button in the middle to regenerate a new set of positions.
 Everything is located in the `PositionerPlayground.playground` directory. The Swift source for the playground is
 there as `Contents.swift`. The supporting files are found in `Sources`:
 
-* [Positioner.swift](Positioner.swift) -- the position generating code
+* [Positioner.swift](./PositionerPlayground.playground/Sources/Positioner.swift) -- the position generating code
 * [Button.swift](Button.swift) -- creates the *Regen* button shown above the scene. The `regenPositions` method populates the
 SpriteKit scene of the playground with sprites using data from the `Positioner` instance.
 * [RandomUniform.swift](RandomUniform.swift) -- random number generator using the facilities from Apple's
