@@ -25,7 +25,7 @@ is set in the [Contents.swift](./PositionerPlayground.playground/Contents.swift)
 filtering is done in the [Button.swift](./PositionerPlayground.playground/Sources/Button.swift) file in the
 `regenPositions` routine.
 
-Clicking on the 'Regen' button will regenerate a new set of positions.
+Clicking on the **Regen** button will regenerate a new set of positions.
 
 ## Files
 
