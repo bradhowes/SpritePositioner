@@ -6,11 +6,11 @@ up with.
 
 ![](Scene.png)
 
-The class Positioner generates positions based on settings provided in the constructor (see
-`PositionerPlayground.playground/Sources`). The gist is that we divide up the given rectangle into possible
-locations, then randomly vary the positions in X, Y dimensions that will keep the necessary separation so that
-no two sprite positions will overlap. Finally, we dole out positions in a random way. See the source for
-additional info.
+The class `Positioner` generates positions based on settings provided in the constructor (see
+[Positioner.swift](./PositionerPlayground.playground/Sources/Positioner.swift)). The gist is that we divide up
+the given rectangle into possible locations, then randomly vary the positions in X, Y dimensions that will keep
+the necessary separation so that no two sprite positions will overlap. Finally, we dole out positions in a
+random way. See the source for additional info.
 
 ## Operation
 
@@ -19,11 +19,11 @@ window to start it. After a short pause you should see a scene like that shown a
 If *that* does not appear, make sure the assistant editor is visible on the right.
 
 The sprites in the scene start out with an alpha of 1.0 (opaque) and then gradually fall to an alpha of 0.10 in
-order to give some semblance of the randomness in which the values come from the `Positioner`. The red region
-behind the **Regen** button shows a *void* where sprites will not appear. The size and position of this region
-is set in the [Contents.swift](./PositionerPlayground.playground/Contents.swift) as `void`, but the actual
-filtering is done in the [Button.swift](./PositionerPlayground.playground/Sources/Button.swift) file in the
-`regenPositions` routine.
+order to give some semblance of the randomness in which the values come from the `Positioner` instance in the
+playground. The red region behind the **Regen** button shows a *void* where sprites will not appear. The size
+and position of this region is set in the [Contents.swift](./PositionerPlayground.playground/Contents.swift) as
+`void`, but the actual filtering is done in the
+[Button.swift](./PositionerPlayground.playground/Sources/Button.swift) file in the `regenPositions` routine.
 
 Clicking on the **Regen** button will regenerate a new set of positions.
 
