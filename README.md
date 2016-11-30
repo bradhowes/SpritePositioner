@@ -29,7 +29,8 @@ Clicking on the **Regen** button will regenerate a new set of positions.
 
 ## Files
 
-Everything is located in the `PositionerPlayground.playground` directory. The Swift source for the playground is
+Everything is located in the [PositionerPlayground.playground](./PositionerPlayground.playground) directory.
+The Swift source for the playground is
 there as [Contents.swift](./PositionerPlayground.playground/Contents.swift). The supporting files are found in
 the [Sources](./PositionerPlayground.playground/Sources) folder:
 
