@@ -9,6 +9,11 @@
 import CoreGraphics
 import SpriteKit
 
+/** 
+ Generates random positions in a given rectangular region that have a minimum separation and some amount of variance in
+ their axis component values. With no variance, the result should be dense packing in one or both dimensions when the
+ dimension length is a multiple of the min separation value.
+ */
 public class Positioner: Sequence, IteratorProtocol {
 
     public typealias FilterProc = (CGPoint)->Bool
@@ -73,7 +78,7 @@ public class Positioner: Sequence, IteratorProtocol {
             while y <= bounds.maxY {
                 let pt = CGPoint(x: x, y: y) + CGVector(dx: randomSource.uniform(lower: -xVar, upper: xVar),
                                                         dy: randomSource.uniform(lower: -yVar, upper: yVar))
-                if filter == nil || filter!(pt) {
+                if filter == nil || filter!(pt) == true {
                     randomPositions.append(pt)
                 }
                 y += ySpacing
