@@ -27,7 +27,6 @@ let pos = Positioner(bounds: rect,
 //
 let sceneView = SKView(frame: rect)
 let scene = SKScene(size: rect.size)
-scene.backgroundColor = UIColor.darkGray
 
 // Show the scene
 //
