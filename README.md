@@ -29,9 +29,9 @@ Everything is located in the `PositionerPlayground.playground` directory. The Sw
 there as `Contents.swift`. The supporting files are found in `Sources`:
 
 * [Positioner.swift](./PositionerPlayground.playground/Sources/Positioner.swift) -- the position generating code
-* [Button.swift](Button.swift) -- creates the *Regen* button shown above the scene. The `regenPositions` method populates the
+* [Button.swift](./PositionerPlayground.playground/Sources/Button.swift) -- creates the *Regen* button shown above the scene. The `regenPositions` method populates the
 SpriteKit scene of the playground with sprites using data from the `Positioner` instance.
-* [RandomUniform.swift](RandomUniform.swift) -- random number generator using the facilities from Apple's
+* [RandomUniform.swift](./PositionerPlayground.playground/Sources/RandomUniform.swift) -- random number generator using the facilities from Apple's
 [GameKit](https://developer.apple.com/reference/gamekit)
-* [CoreGraphics+Additions.swift](CoreGraphics+Additions.swift) -- extentions to various
+* [CoreGraphics+Additions.swift](./PositionerPlayground.playground/Sources/CoreGraphics+Additions.swift) -- extentions to various
 [CoreGraphics](https://developer.apple.com/reference/coregraphics) structs to allow for simple math expressions
